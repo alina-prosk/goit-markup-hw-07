@@ -1,0 +1,18 @@
+@import "./utils/vars";
+@import "./base/reset.scss";
+@import "./component/container";
+@import "./component/visuali-hidden";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+
+@import "./component/title";
+
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/projects";
+@import "./layout/footer";
+@import "./layout/modal";
