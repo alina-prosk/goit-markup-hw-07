@@ -1,20 +1,19 @@
 .work{
 padding-top: 0;
-}
-
-.work__title{
-    margin-bottom: 50px;
+&__title {
+        margin-bottom: 50px;
+    }
 }
 
 .work-list{
     display: flex;
 }
 
-.work-list__item + .work-list__item{
-    margin-left: 30px;
-}
 .work-list__item{
 position: relative;
+& + &{
+        margin-left: 30px;
+    }
 }
 
 .work-list__text {

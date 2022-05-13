@@ -1,7 +1,11 @@
-@import "./utils/vars";
+@import "./base/common";
+@import "./base/section";
 @import "./base/reset.scss";
+@import "./utils/vars";
+
 @import "./component/container";
 @import "./component/visuali-hidden";
+@import "./component/logo";
 
 @import "./layout/header";
 @import "./layout/hero";

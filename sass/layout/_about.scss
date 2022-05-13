@@ -2,12 +2,11 @@
     display: flex;
 }
 
-.about-list__item + .about-list__item {
-    margin-left: 30px;
-}
-
 .about-list__item {
     max-width: 270px;
+    & + &{
+            margin-left: 30px;
+        }
 }
 
 

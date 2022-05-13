@@ -4,16 +4,15 @@
     justify-content: center;
 }
 
-.filter-item+.filter-item {
-    margin-left: 8px;
-}
-
-.filter-item:hover,
-.filter-item:focus {
+.filter-item {
+    &:hover, &:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    border-radius: 4px;}
+    & + &{
+        margin-left: 8px;
+    }
 }
 
 
@@ -32,21 +31,19 @@
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover {
+                background-color: var(--focus-color);
+                color: var(--text-bacground-color);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+                border-radius: 4px;
+            }
 }
 
 .current-btn {
     background-color: var(--focus-color);
     color: var(--text-bacground-color);
-}
-
-.filter-btn:focus,
-.filter-btn:hover {
-    background-color: var(--focus-color);
-    color: var(--text-bacground-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .pointer {
